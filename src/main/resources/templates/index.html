@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-CN" >
+<head>
+  <meta charset="UTF-8">
+  <title>网上商城</title>
+<link rel="stylesheet" href="css/index.css">
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+<div class='navbar'>
+  <div class='logo'>网上商城</div>
+    <div class='username-container' style="display: none;">
+      <div id="show-username"></div>
+    </div>
+    <div class='account-container' style="display: none;">
+      <i class="fa fa-user" aria-hidden="true"></i>
+      <div class='cart-desc' onclick="javascript:window.location.href='order.html'">我的订单</div>
+    </div>
+    <div class='cart-container' style="display: none;">
+      <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+      <div class='cart-desc' onclick="javascript:window.location.href='cart.html'">购物车</div>
+    </div>
+
+    <div class='register-container'>
+      <div class='cart-desc' onclick="javascript:window.location.href='register.html'">注册</div>
+    </div>
+    <div class='login-container'>
+      <div class='cart-desc' onclick="javascript:window.location.href='login.html'">登录</div>
+    </div>
+</div>
+
+<!-- INFO BAR -->
+<div class='info-wrapper'>
+  <div class='shipping-container'>
+    <i class="fa fa-truck fa-2x "></i>
+    <div class='info-desc'>全场包邮</div>
+  </div>
+</div>
+
+<!-- MAIN WRAPPER -->
+<div class='main-wrapper'>
+
+  <div class='products-container'>
+
+    <div class='shop-card' data-cat='Amazon'>
+      <div class="title">
+        23.8英寸IPS显示器
+      </div>
+      <div class="desc">
+        个人/商务电脑显示器
+      </div>
+      <div class="product">
+         <img src="https://img10.360buyimg.com/mobilecms/s250x250_jfs/t1/128230/2/3616/130650/5ed46b2dE00f8af9a/6793ca33b5894d20.png" />
+      </div>
+      <div class='cta'>
+        <div class="price">￥759</div>
+        <button id="button-1" class="button" onclick="addToCart(1)">加入购物车</button>
+      </div>
+    </div>
+
+    <div class='shop-card' data-cat='Amazon'>
+      <div class="title">
+        索尼PS4 Pro
+      </div>
+      <div class="desc">
+        1TB主机（黑色）
+      </div>
+      <div class="product">
+         <img src="https://img20.360buyimg.com/babel/s320x320_jfs/t26770/225/2396053018/125911/9353a427/5bfe5acaNce1c6d6a.jpg!cc_320x320.webp" />
+      </div>
+      <div class='cta'>
+        <div class="price">￥2599</div>
+        <button id="button-2" class="button" onclick="addToCart(2)">加入购物车</button>
+      </div>
+    </div>
+
+    <div class='shop-card' data-cat='Lenovo'>
+      <div class="title">
+        AMD 锐龙9 3900X
+      </div>
+      <div class="desc">
+        12核24线程
+      </div>
+      <div class="product">
+         <img src="https://img20.360buyimg.com/babel/s320x320_jfs/t1/55230/40/3512/407689/5d12df1eE1d24f849/480bbe8cb024267b.jpg!cc_320x320.webp" />
+      </div>
+      <div class='cta'>
+        <div class="price">￥3799</div>
+        <button id="button-3" class="button" onclick="addToCart(3)">加入购物车</button>
+      </div>
+    </div>
+    
+    <div class='shop-card' data-cat='Amazon'>
+      <div class="title">
+        微软 Xbox One S
+      </div>
+      <div class="desc">
+        1TB全数字青春版
+      </div>
+      <div class="product">
+         <img src="https://img30.360buyimg.com/babel/s320x320_jfs/t1/45792/18/5733/66817/5d36d547E89bea6da/6cb8d35b21981f5a.jpg!cc_320x320.webp" />
+      </div>
+      <div class='cta'>
+        <div class="price">￥1399</div>
+        <button id="button-4" class="button" onclick="addToCart(4)">加入购物车</button>
+      </div>
+    </div>
+    
+    <div class='shop-card' data-cat='Lenovo'>
+      <div class="title">
+        Apple Watch
+      </div>
+      <div class="desc">
+        Series 5 智能手表
+      </div>
+      <div class="product">
+         <img src="https://img11.360buyimg.com/babel/s320x320_jfs/t1/93403/40/3969/124750/5de4aa23E5f3ae6c2/cc8e307f5aeccb49.jpg!cc_320x320.webp" />
+      </div>
+      <div class='cta'>
+        <div class="price">￥2799</div>
+        <button id="button-5" class="button" onclick="addToCart(5)">加入购物车</button>
+      </div>
+    </div>
+    
+    <div class='shop-card'>
+      <div class="title">
+        索尼 ILCE-6100L
+      </div>
+      <div class="desc">
+        APS-C画幅微单数码相机
+      </div>
+      <div class="product">
+         <img src="https://img14.360buyimg.com/babel/s320x320_jfs/t1/118069/3/6348/305657/5eb9f8e4Ee4811a3f/4f8d07d05b1582c1.jpg!cc_320x320.webp" />
+      </div>
+      <div class='cta'>
+        <div class="price">￥4499</div>
+        <button id="button-6" class="button" onclick="addToCart(6)">加入购物车</button>
+      </div>
+    </div>
+    
+    <div class='shop-card'>
+      <div class="title">
+        任天堂 Switch
+      </div>
+      <div class="desc">
+        Nintendo Switch
+      </div>
+      <div class="product">
+         <img src="https://img20.360buyimg.com/babel/s320x320_jfs/t1/105418/31/5456/152119/5ded9745Efaac250b/0816c8238f356b08.jpg!cc_320x320.webp" />
+      </div>
+      <div class='cta'>
+        <div class="price">￥2228</div>
+        <button id="button-7" class="button" onclick="addToCart(7)">加入购物车</button>
+      </div>
+    </div>
+    
+    <div class='shop-card'>
+      <div class="title">
+        索尼 E 55-210mm
+      </div>
+      <div class="desc">
+        F/4.5-6.3 OSS APS-C
+      </div>
+      <div class="product">
+         <img src="https://img10.360buyimg.com/babel/s320x320_jfs/t18433/347/2650093335/259045/ee6ee7a2/5b040001Nc90d6872.jpg!cc_320x320.webp" />
+      </div>
+      <div class='cta'>
+        <div class="price">￥1199</div>
+        <button id="button-8" class="button" onclick="addToCart(8)">加入购物车</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class='modal'>
+  <div>asdasdas asd as </div>
+  <div>asdasdas asd as </div>
+  <div>asdasdas asd as </div>
+  <div>asdasdas asd as </div>
+</div>
+
+<script  src="scripts/index.js"></script>
+
+</body>
+</html>
